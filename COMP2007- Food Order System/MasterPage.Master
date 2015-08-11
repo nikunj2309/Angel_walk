@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="COMP2007__Food_Order_System.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Author: Nikunj Vala & Nirbhay Jadhav -->
+<!-- Web App Name: Food Order System -->
+<!-- Creation Date: July 22, 2015 -->
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--website Icon -->
+    <link rel="shortcut icon" href="Image/logo.png" />
+    <title>Angel Walk</title>
+    <!-- CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <form id="form1" runat="server">
+            <div>
+                <asp:PlaceHolder ID="PublicNav" runat="server">
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                
+                                <a href="/" class="navbar-brand" href="/">Angel Walk</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="../Menu.aspx"><i class="fa fa-cutlery"></i> Our Menu</a></li>
+                                    <li><a href="../special.aspx"><i class="fa fa-circle"></i> Special Offers</a></li>
+                                    <li><a href="/About.aspx"><i class="fa fa-child"></i> About Us</a></li>
+                                    <li><a href="/Contact.aspx"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/Register.aspx">Register</a></li>
+                                    <li><a href="/Login.aspx"><i class="fa fa-sign-in"></i> Login</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </asp:PlaceHolder>
+                <!-- PublicNav -->
+
+                <asp:PlaceHolder ID="PrivateNav" runat="server">
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="/">Angel Walk</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="/Orders/Default.aspx"><i class="fa fa-bullseye"></i> Order Online</a></li>
+                                    <li><a href="/Menu.aspx"><i class="fa fa-cutlery"></i> View Menu</a></li>
+                                    <li><a href="../special.aspx">Special Offers</a></li>
+                                    <li><a href="/About.aspx"><i class="fa fa-child"></i> About Us</a></li>
+                                    <li><a href="/Contact.aspx"><i class="fa fa-phone-square"></i> Contact Us</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="navbar-text">Welcome ,
+                                        <asp:LoginName ID="LoginName1" runat="server" />
+                                    </li>
+                                    <li><a href="/Logout.aspx"><i class="fa fa-sign-out"></i> LogOut</a></li>
+
+
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </asp:PlaceHolder>
+                <!-- PublicNav -->
+
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+
+                <footer class="container-fluid">
+                    <nav class="nav navbar-inverse navbar-fixed-bottom alert-warning">
+
+                        <h4 class="navbar-text text-center" id="footer">&copy; <%: DateTime.Now.Year %> - Angel Walk</h4>
+
+                    </nav>
+                </footer>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+
