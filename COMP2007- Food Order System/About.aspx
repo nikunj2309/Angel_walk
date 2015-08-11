@@ -20,7 +20,7 @@
                 Founded in 2015 by Nikunj Vala and Nirbhay Jadhav, Food Order System has come a long way from its beginnings in India.
             </p>
 
-            <div id="" class="col-lg-5 span50">
+            <div class="col-lg-5 span50">
                 <img class="img-responsive slidedown" src="Image/angel_walk_vision.png" height="600" width="786">
             </div>
 

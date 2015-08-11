@@ -3,8 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron col-md-8 col-md-push-2 text-center" id="qwerty">
-        <div class="container">
-            <h2><%: Title %></h2>
+        
+            
+  <img class="img-responsive logoimg logoimg-mob" src="Image/logo.png" height="100" width="100" alt="Angel Walk" title="Angel Walk restaurant."></a>
+           
             <h3>Angel Walk</h3>
             <address>
                 Georgian College<br />
@@ -12,8 +14,7 @@
                 <abbr title="Phone">Phone:</abbr>
                 306.317.6677
             </address>
-         </div>
-        <form class="navbar-form navbar-left" role="search">
+   <form class="navbar-form navbar-left" role="search">
   <div class="form-group">
     <label for="name">Your name:</label><br />
 	<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
@@ -26,6 +27,8 @@
   </div>
 <button type="submit" class="btn btn-default">Submit</button>
 </form>
+        
+        
     </div>
     
 </asp:Content>
