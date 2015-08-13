@@ -35,7 +35,7 @@
             document.write(date.toLocaleTimeString("en-us", options));
         }
     </script>
-    <script src="http://my.massblurb.com/outlet-styles/js/moment.js"></script>
+    <script src="scripts/moment.js"></script>
 
     <script type="text/javascript">
         function convertDateToMomentTime(date) {
@@ -116,10 +116,9 @@
         ga('create', 'UA-57233689-2', 'auto');
         ga('send', 'pageview', { 'title': '' });
     </script>
+    <script src="scripts/responsiveslides.min.js"></script>
 
-    <script src="http://my.massblurb.com/template-assets/restaurant-three/web/js/responsiveslides.min.js"></script>
-
-    <script>
+     <script>
         $(function () {
             $("#slider4").responsiveSlides({
                 auto: true,
@@ -137,10 +136,10 @@
         });
     </script>
 
-    <div id="top" class="jumbletron callbacks_container">
+    <div id="top" class="container">
         <ul class="rslides" id="slider4">
             <li>
-                <img src="http://my.massblurb.com/public/uploads/brands/16/cover_photos/Re75cih5ysSp.jpg">
+                <img src="Image/1.jpg">
                 <div class="caption">
                     <div class="slide-text-info text-center">
                         <h1>Welcome to Angel Walk.</h1>
@@ -148,10 +147,18 @@
                 </div>
             </li>
             <li>
-                <img src="http://my.massblurb.com/public/uploads/brands/16/cover_photos/h8UJNSUd2oeM.jpg">
+                <img src="Image/2.jpg">
                 <div class="caption">
                     <div class="slide-text-info text-center">
                         <h1>Welcome to Angel Walk.</h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="Image/3.jpg">
+                <div class="caption">
+                    <div class="slide-text-info text-center">
+                        
                     </div>
                 </div>
             </li>

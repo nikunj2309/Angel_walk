@@ -155,10 +155,6 @@
     <Content Include="Image\1.jpg" />
     <Content Include="Image\2.jpg" />
     <Content Include="Image\3.jpg" />
-    <Content Include="Image\4.jpg" />
-    <Content Include="Image\5.jpg" />
-    <Content Include="Image\6.jpg" />
-    <Content Include="Image\a03.png" />
     <Content Include="Image\Angel_walk cover.png" />
     <Content Include="Image\angel_walk_history.png" />
     <Content Include="Image\angel_walk_vision.png" />
@@ -220,6 +216,8 @@
     <Content Include="scripts\jquery-1.9.1.min.js" />
     <Content Include="scripts\jssor.js" />
     <Content Include="scripts\jssor.slider.js" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\responsiveslides.min.js" />
     <Content Include="special.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
